@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Calculadora de médias</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎓 <b>Calculadora de médias</b> 🎓</h1>
+        </header>
+        <form id="form-atividade">
+            <input type="text" required placeholder="Nome da atividade" id="nome_atividade">
+            <input type="number" required placeholder="Nota" min="0" max="10" id="nota_atividade">
+            <button type="submit">Adicionar +</button>
+        </form>
+        <table cellspacing="0" id="table-atividade">
+            <thead>
+                <tr>
+                    <th><b>Nome da atividade</b></th>
+                    <th><b>Nota</b></th>
+                    <th><b>Aprovado?</b></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+            <tfoot>
+                <tr>
+                    <td><b>Média final</b></td>
+                    <td id="media-final-valor"><b>---</b></td> <!--Média dos valores inseridos-->
+                    <td id="media-final-resultado"><b><span>---</span></b></td> <!--Aprovado ou reprovado de acordo com a média 6-->
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
