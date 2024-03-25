@@ -23,6 +23,7 @@ function adicionaLinha() {
 
     if (atividades.includes(nome_atividade.value)) {
         alert(`A atividade: ${nome_atividade.value} já foi inserida`);
+        return;
     } else {
         atividades.push(nome_atividade.value);
         notas.push(parseFloat(nota_atividade.value));
