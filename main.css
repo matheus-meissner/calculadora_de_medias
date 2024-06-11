@@ -104,3 +104,16 @@ table td img {
 .reprovado {
     background-color: red;
 }
+
+@media screen and (max-width: 750px) {
+    header h1 {
+        font-size: 30px;
+    }
+    form button {
+        margin-right: 7px;
+    }
+    form input {
+        font-size: 20px;
+        margin-left: 4px;
+    }
+}
